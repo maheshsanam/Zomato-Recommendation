@@ -3,43 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato Front Page</title>
+    <title>Zomato Dining Recommendation</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-
-        .bg {
-            /* The image used */
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Zomato_logo.png/1200px-Zomato_logo.png');
-
-            /* Full height */
-            height: 100%; 
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .content {
-            color: white;
-            font-size: 50px;
+        header {
+            width: 100%;
+            background-color: #1f1f1f;
+            color: #ff6f61;
+            padding: 20px 0;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 20px;
+            text-align: center;
+        }
+        .content img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e55d50;
+        }
+        .food-animation {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+        }
+        .food-animation img {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <div class="bg">
-        <div class="content">
-            Welcome to Zomato
+    <header>
+        Epic Eats
+    </header>
+    <div class="content">
+        <h1>Welcome to Zomato Dining Recommendation</h1>
+        <p>Your perfect dining experience starts here. Discover the best restaurants around you with our expert recommendations.</p>
+        <div class="food-animation">
+            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Food Image 1">
+            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Food Image 2" style="top: 0; right: 0;">
+            <img src="https://media.easemytrip.com/media/Blog/India/637884697871557852/637884697871557852msL3Xw.jpg" alt="Food Image 3" style="bottom: 0; left: 0;">
+            <img src="https://static2.tripoto.com/media/filter/tst/img/439716/TripDocument/1548673517_food.jpg" alt="Food Image 4" style="bottom: 0; right: 0;">
         </div>
+        <img src="https://media.istockphoto.com/id/500466008/photo/beef-steak.jpg?s=612x612&w=0&k=20&c=tw-5wKCwwZ6lHRCbJToMIdiBt1VTNrBEcnifZQS6v_o=" alt="Dining Picture">
+        <a href="/recommend" class="button">Get Recommendation</a>
     </div>
 </body>
 </html>
