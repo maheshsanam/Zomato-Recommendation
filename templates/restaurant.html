@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #1f1f1f;
+            color: #ff6f61;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .tableauPlaceholder {
+            width: 80%;
+            max-width: 1100px;
+            height: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .tableauPlaceholder object {
+            display: none;
+        }
+        @media (max-width: 800px) {
+            .tableauPlaceholder {
+                height: 600px;
+            }
+        }
+        @media (max-width: 500px) {
+            .tableauPlaceholder {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Epic Eats
+    </header>
+    <div class="content">
+        <h1>Restaurant Recommendations</h1>
+        <p>Explore our top restaurant recommendations based on your preferences. Dive into the best dining experiences we have to offer.</p>
+        <div class='tableauPlaceholder' id='viz1721627078834'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Zo/Zomatoproject_17208489661870/Dashboard1/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Zomatoproject_17208489661870/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Zo/Zomatoproject_17208489661870/Dashboard1/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1721627078834');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.minWidth = '100px';
+                vizElement.style.maxWidth = '1100px';
+                vizElement.style.width = '100%';
+                vizElement.style.minHeight = '527px';
+                vizElement.style.maxHeight = '1087px';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.minWidth = '100px';
+                vizElement.style.maxWidth = '1100px';
+                vizElement.style.width = '100%';
+                vizElement.style.minHeight = '527px';
+                vizElement.style.maxHeight = '1087px';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '877px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+</body>
+</html>
